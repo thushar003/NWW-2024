@@ -1,41 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 :root {
-    /* --background-color: rgb(255, 255, 255); */
+    --background-col: rgb(255, 255, 255);
     --color: black;
-    --padding: 0;
-    --margin: 0;
+    --padding: 2.5px;
+    --margin: 2.5px;
     --base-col: black;
-    --primary-col : rgb(213, 211, 211);
+    --primary-col : rgb(239, 238, 238);
     --secondary-col: rgb(168, 167, 167);
 }
 
 .darkmode
 {
-    /* --background-color: rgb(0, 0, 0); */
+    --background-col: rgb(0, 0, 0);
     --color: rgb(255, 255, 255);
-    --padding: 0;
-    --margin: 0;
-    --base-col: rgb(75, 75, 75);
-    --primary-col : rgb(150, 149, 149);
-    --secondary-col: rgb(156, 156, 156);
+    --padding: 2.5px;
+    --margin: 2.5px;
+    --base-col: rgb(218, 215, 215);
+    --primary-col : rgb(57, 57, 57);
+    --secondary-col: rgb(0, 0, 0);
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
+button{
+    border: none;
+    padding: .8em 2em;
+    background-color: var(--primary-col);
+    color: white;
+    border-radius: 4px;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
 body {
-    /* background-color: var(--background-color); */
+    background-color: var(--background-col);
     color: var(--color);
     padding: var(--padding);
     margin: var(--margin);
 }
 
-.hero {
+#hero {
     background-color: var(--secondary-col);
 }
 
-.content {
+#content {
     background-color: var(--primary-col);
 }
 
@@ -62,7 +74,7 @@ section {
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-col);
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     position: fixed;
