@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 :root {
-    --background-color: white;
+    /* --background-color: rgb(255, 255, 255); */
     --color: black;
     --padding: 0;
     --margin: 0;
     --base-col: black;
     --primary-col : rgb(213, 211, 211);
+    --secondary-col: rgb(168, 167, 167);
 }
 
 .darkmode
 {
-    --background-color: rgb(0, 0, 0);
+    /* --background-color: rgb(0, 0, 0); */
     --color: rgb(255, 255, 255);
     --padding: 0;
     --margin: 0;
     --base-col: rgb(75, 75, 75);
     --primary-col : rgb(150, 149, 149);
+    --secondary-col: rgb(156, 156, 156);
 }
 
 html {
@@ -23,10 +25,18 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     color: var(--color);
     padding: var(--padding);
     margin: var(--margin);
+}
+
+.hero {
+    background-color: var(--secondary-col);
+}
+
+.content {
+    background-color: var(--primary-col);
 }
 
 section {
@@ -34,7 +44,7 @@ section {
     place-items: center;
     align-items: center;
     text-align: center;
-    min-height: 75vh;
+    min-height: 50vh;
 }
 
 .hidden {
@@ -48,16 +58,16 @@ section {
 
 #darkmode-switch {
     height: 50px;
-    weight: 50px;
-    padding: 10px;;
+    width: 50px;
+    padding: 0;
     border-radius: 50%;
     background-color: var(--base-col);
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 }
 
 #darkmode-switch svg {
