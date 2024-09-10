@@ -1,22 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
-:root {
+:root{
     --background-col: rgb(255, 255, 255);
     --color: black;
     --padding: 2.5px;
     --margin: 2.5px;
     --base-col: black;
-    --primary-col : rgb(239, 238, 238);
+    --primary-col: rgb(239, 238, 238);
     --secondary-col: rgb(168, 167, 167);
 }
 
-.darkmode
-{
+.darkmode{
     --background-col: rgb(0, 0, 0);
     --color: rgb(255, 255, 255);
     --padding: 2.5px;
     --margin: 2.5px;
     --base-col: rgb(218, 215, 215);
-    --primary-col : rgb(57, 57, 57);
+    --primary-col: rgb(57, 57, 57);
     --secondary-col: rgb(0, 0, 0);
 }
 
