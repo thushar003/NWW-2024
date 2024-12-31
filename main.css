@@ -5,8 +5,8 @@
     --padding: 2.5px;
     --margin: 2.5px;
     --base-col: black;
-    --primary-col: rgb(239, 238, 238);
-    --secondary-col: rgb(168, 167, 167);
+    --primary-col: rgb(255, 255, 255);
+    --secondary-col: rgb(255, 255, 255);
 }
 
 .darkmode{
@@ -15,7 +15,7 @@
     --padding: 2.5px;
     --margin: 2.5px;
     --base-col: rgb(218, 215, 215);
-    --primary-col: rgb(57, 57, 57);
+    --primary-col: rgb(0, 0, 0);
     --secondary-col: rgb(0, 0, 0);
 }
 
@@ -40,6 +40,63 @@ body {
     color: var(--color);
     padding: var(--padding);
     margin: var(--margin);
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100px;
+    background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%, 100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linaer-gradient(to top, #008aff, #00ffe7);
+    filter: blur(20px);
 }
 
 #hero {
@@ -78,7 +135,7 @@ section {
     align-items: center;
     position: fixed;
     top: 10px;
-    right: 10px;
+    left: 10px;
 }
 
 #darkmode-switch svg {
