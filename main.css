@@ -112,7 +112,7 @@ section {
     place-items: center;
     align-items: center;
     text-align: center;
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 .hidden {
